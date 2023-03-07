@@ -1,0 +1,16 @@
+#Import Plyer using pip 
+pip install plyer
+
+from plyer import notification
+
+notification_title = "My Notification"
+notification_message = "This is my notification message!"
+notification_icon = "path/to/icon.png"  # Optional icon path
+
+notification.notify(
+    title=notification_title,
+    message=notification_message,
+    app_name="My App Name",  # Optional app name
+    app_icon=notification_icon,
+    timeout=10  # Optional timeout in seconds
+)
